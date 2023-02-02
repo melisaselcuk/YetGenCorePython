@@ -1,2 +1,17 @@
-# YetGenCorePython
-Eğitim Öncesi ve Eğitim Sonrası Görevler
+# Yetgen Core Python Eğitim Programı
+
+Yetgen Core Python Eğitim Programı kapsamında yaptığım çalışmaları buraya yüklüyorum.
+
+<img.src"https://yetkingencler.com/wp-content/uploads/2021/07/yetgen-beyaz-e1626884322969-200x74.png">
+
+# Eğitim Programı
+## 1. Hafta Yaptığım Çalışmalar
+
+-Git Öğrenimi
+-Python Öğrenimi
+-Python ve Visual Code Kurulumu
+-Python Nedir?
+
+
+
+
