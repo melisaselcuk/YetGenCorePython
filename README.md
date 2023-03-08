@@ -19,3 +19,9 @@
 - Değişkenler, Tanımlama Kuralları ve Type() Fonksiyonu
 - Veri Türleri ve Input () Fonksiyonuyla Input Alma
 
+## 3. Hafta Yaptığım Çalışmalar
+
+- Karşılaştırma ve Mantıksal Operatörler
+- Karar Yapıları
+- Döngüler
+
