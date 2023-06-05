@@ -1,0 +1,43 @@
+class AtistirmalikOtomati:
+    def __init__(self):
+        self.bakiye = 50
+        self.urunler = {
+            "1" : {"isim" : "cips" , "fiyat" : 15, "kalan(stok)" : 4},
+            "2" : {"isim" : "meyvesuyu" , "fiyat" : 8, "kalan(stok)" : 7},
+            "3" : {"isim" : "biskuvi" , "fiyat" : 10, "kalan(stok)" : 5},
+        }
+    def urunleri_goster(self):
+        print("mevcut urunlerimiz ve fiyatlari:")
+        for item, urun in self.urunler.items():
+            print(item, "-", urun["isim"], "fiyat: TL", urun["fiyat"], "stok:", urun["kalan(stok)"])
+    def bakiyeyi_goster(self):
+        print("Mevcut Bakiyeniz : TL", self.bakiye)
+    def urun_sec(self):
+        while True:
+            secim = input("Lutfen Seciminizi Yapin. Cikis icin Q'ya Basin.")
+            if secim.lower() == "Q":
+                print("Cikis yapiliyor...")
+                break
+            if secim in self.urunler:
+                secili_urun = self.urunler[secim]
+                if secili_urun["kalan(stok)"] > 0:
+                    if self.bakiye >= secili_urun["fiyat"]:
+                        self.bakiye -= secili_urun["fiyat"]
+                        secili_urun["kalan(stok)"] -= 1
+                        print("Sectiginiz", secili_urun["isim"], "veriliyor. Kalan Bakiyeniz: TL", self.bakiye)
+                    else:
+                        print("Bakiyeniz yetersiz. Biraz daha para yatırın.")
+                else:
+                    print("Ürünümüzün stogu bitmis. Lütfen baska bir ürün secin.")
+            else:
+                print("Gecersiz secim yaptiniz. Tekrar deneyin.")
+    def atistirmalik_otomatini_calistir(self):
+        print("Atistirmalik Otomatina Hosgeldiniz!")
+        self.bakiyeyi_goster()
+        self.urun_sec()
+        self.bakiyeyi_goster()
+
+otomat = AtistirmalikOtomati()
+otomat.atistirmalik_otomati_calistir()
+
+
